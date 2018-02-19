@@ -3,6 +3,10 @@
 
 Algorithms written in the classes of Algorithms and Data Structures I (Algoritmos e Estruturas de Dados I) at Federal University of ABC (UFABC).
 
+## Classes
+
+- **19/02/2018:** Subject apresentation. Introduction to the C programming language;
+
 ## License
 
     The MIT License (MIT)
