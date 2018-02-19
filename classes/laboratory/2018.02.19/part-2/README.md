@@ -8,6 +8,7 @@
 
 > "C is quirky, flawed, and an enormous success. C++ and Java, say, are presumably growing faster
 > than plain C, but I bet C will still be around."
+>
 > **Dennis Ritchie's quotes**
 
 ### Algumas características da linguagem C
@@ -23,6 +24,7 @@ e baixo nível, referência para outras linguagens ex. C++, Java, C#, Go, Arduin
 constructors/destructors, genericity, overloading, exceptions, runtime type checking).
 
 > "Anybody who comes to you and says he has a perfect language is either naive or a salesman.""
+>
 > **Bjarne Stroutrup's quote**
 
 ## Elementos básicos da linguagem
