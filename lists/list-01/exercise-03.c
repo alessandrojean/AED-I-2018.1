@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 
 // Struct responsável por representar
 // um segmento no painel.
@@ -36,7 +35,7 @@ struct Segmento REPRESENTACOES[] = {
 
 const char HEXADECIMAL[] = "0123456789abcdef";
 
-char * converterParaHexadecimal (unsigned long long int numero);
+char * converterParaHexadecimal (unsigned long long int numero, int * tam);
 struct Segmento ** converterParaSegmentos (char * numeroEmHexa, int n);
 int charParaIndex (char c);
 void imprimirRepresentacao (struct Segmento ** digitos, int n);
@@ -50,8 +49,8 @@ int main (int argc, char **argv) {
   printf("Digite um número: ");
   scanf("%lld", &n);
 
-  char * convertido = converterParaHexadecimal(n);
-  int tam = strlen(convertido);
+  int tam = 0;
+  char * convertido = converterParaHexadecimal(n, &tam);
 
   struct Segmento ** segmentos = converterParaSegmentos(convertido, tam);
 
@@ -60,7 +59,7 @@ int main (int argc, char **argv) {
   return EXIT_SUCCESS;
 }
 
-char * converterParaHexadecimal (unsigned long long int numero) {
+char * converterParaHexadecimal (unsigned long long int numero, int * tamR) {
   char * conversao = (char *) malloc(64 * sizeof(char));
   int tam = 0, i = 0;
 
@@ -79,6 +78,7 @@ char * converterParaHexadecimal (unsigned long long int numero) {
   }
 
   conversao[tam] = '\0';
+  *tamR = tam;
 
   return conversao;
 }
