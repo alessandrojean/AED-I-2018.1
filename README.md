@@ -5,7 +5,39 @@ Algorithms written in the classes of Algorithms and Data Structures I (Algoritmo
 
 ## Classes
 
-- **19/02/2018:** Subject apresentation. Introduction to the C programming language;
+| Date       | Type       | Subject                                                                                 |
+| :--------: | ---------- | --------------------------------------------------------------------------------------- |
+| 19/02/2018 | Laboratory | Subject apresentation. Introduction to the C programming language.                      |
+| 21/02/2018 | Theory     | Introduction to the C programming language *(continuation)*.                            |
+| 26/03/2018 | Laboratory | Introduction to the C programming language *(continuation)*. Dynamic linear structures. |
+| 28/02/2018 | Theory     | Basic notions of algorithm complexity.                                                  |
+| 05/03/2018 | Laboratory | Linear structures.                                                                      |
+| 07/03/2018 | Theory     | Linear structures and search algorithms.                                                |
+| 12/03/2018 | Laboratory | Linear structures and search algorithms *(continuation)*.                               |
+| 14/03/2018 | Theory     | Search trees.                                                                           |
+| 19/03/2018 | Laboratory | Search trees *(continuation)*.                                                          |
+| 21/03/2018 | Theory     | Exercise review.                                                                        |
+| 26/03/2018 | Laboratory | **First test.**                                                                         |
+| 28/03/2018 | Theory     | Self-balancing search trees.                                                            |
+| 02/04/2018 | Laboratory | Self-balancing search trees *(continuation)*.                                           |
+| 04/04/2018 | Theory     | Self-balancing search trees *(continuation)*.                                           |
+| 09/04/2018 | Laboratory | Self-balancing search trees *(continuation)*.                                           |
+| 11/04/2018 | Theory     | Simple sorting algorithms.                                                              |
+| 16/04/2018 | Laboratory | Sorting.                                                                                |
+| 18/04/2018 | Theory     | Efficient sorting algorithms.                                                           |
+| 23/04/2018 | Laboratory | Sorting *(continuation)*.                                                               |
+| 25/04/2018 | Theory     | Another sorting algorithms.                                                             |
+| 02/05/2018 | Theory     | Exercise review.                                                                        |
+| 07/05/2018 | Theory     | **Second test.**                                                                        |
+
+## Build instructions
+
+```bash
+# Compiles the file in the bin folder.
+gcc file.c -o bin/file
+# Run the program.
+./bin/file
+```
 
 ## License
 
