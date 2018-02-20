@@ -1,2 +1,6 @@
 .vscode/
 bin/
+*.zip
+*.exe
+*.out
+*.pdf
