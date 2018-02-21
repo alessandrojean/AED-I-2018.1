@@ -3,6 +3,7 @@
 
 int cmp (int * seq1, int * seq2, int n1, int n2);
 int * dobrarSeq (int * seq, int * nseq);
+int * dobrarSeqRealloc (int ** seq, int * nseq);
 int * lerSeq (int * n);
 void printSeq (int * seq, int n);
 
@@ -68,6 +69,13 @@ int * dobrarSeq (int * seq, int * nseq) {
   return tmp;
 }
 
+int * dobrarSeqRealloc (int ** seq, int * nseq) {
+  *seq = (int *) realloc(*seq, 2 * (*nseq) * sizeof(int));
+  *nseq = (*seq == NULL) ? 0 : 2 * (*nseq);
+
+  return *seq;
+}
+
 int * lerSeq (int * n) {
   *n = 2;                   // Começando em 2 para checar se funciona.
 
@@ -93,7 +101,7 @@ int * lerSeq (int * n) {
     }
 
     if (i == (*n) - 1) {    // Precisamos de mais espaço.
-      seq = dobrarSeq(seq, n);
+      seq = dobrarSeqRealloc(&seq, n);
       // Tente usar uma condição mais enxuta.
       if (seq == NULL) {
         return NULL;
