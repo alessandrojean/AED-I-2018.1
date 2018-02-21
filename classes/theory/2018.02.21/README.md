@@ -64,20 +64,20 @@ int main () {
 <table>
 	<thead>
 		<tr>
-			<td>Variável</td>
-			<td>ip</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>c</td>
-			<td>i</td>
-			<td></td>
+			<th>Variável</th>
+			<td><code>ip</code></td>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<td><code>c</code></td>
+			<td><code>i</code></td>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Valor</td>
+			<th>Valor</th>
 			<td>0x00007ffe</td>
 			<td>0x22bc368c</td>
 			<td colspan="4">0x00000041</td>
@@ -85,7 +85,7 @@ int main () {
 			<td>0x????????</td>
 		</tr>
 		<tr>
-			<td>Endereço</td>
+			<th>Endereço</th>
 			<td>0x7ffe22bc3680</td>
 			<td>0x7ffe22bc3684</td>
 			<td colspan="4">0x7ffe22bc3688</td>
