@@ -32,7 +32,7 @@ char * manipular (char * str, int opt) {
     } else if (opt < 0) {
       nStr[i] = tolower(c);
     } else {
-      nStr[i] = (str[i - 1] == ' ' || i == 0) ? toupper((unsigned char) str[i]) : str[i];
+      nStr[i] = (str[i - 1] == ' ' || i == 0) ? toupper(c) : str[i];
     }
   }
 
