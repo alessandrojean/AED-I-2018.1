@@ -25,5 +25,5 @@ void f () {
   (**pp) += 3 * x;        // Variável y tem o valor de 13.
 
   printf("x = %d, y = %d, z = %d\n", y, y, z);
-  printf("p = %p, *p = %d, pp = %p, **pp = %d", p, *p, pp, **pp);
+  printf("p = %p, *p = %d, pp = %p, **pp = %d\n", p, *p, pp, **pp);
 }
