@@ -214,6 +214,31 @@ memória dinamicamente.
 **Estratégia 1:** Começar com um tamanho de vetor mínimo (ex. 10) e, se não for suficiente, dobrar
 o tamanho. **Desvantagem?**
 
+## Estudo independente
+
+### Função `main` e seus argumentos
+
+- Não pode ser usada em nenhum lugar do programa;
+- Pode retornar `void` ou `int`; não precisa ter `return` no corpo;
+- Pode ter ou não parâmetros, os argumentos fornecidos quando o programa é chamado na linha
+de comando são cadeias.
+
+```c
+#include <stdio.h>
+
+int main (int argc, char ** argv) {
+  printf("Program name %s\n", argv[0]);
+  
+  if (argc == 2) {
+    printf("The argument supplied is %s\n", argv[1]);
+  } else if (argc > 2) {
+    printf("Too many arguments supplied.\n");
+  } else {
+    printf("One argument expected.\n");
+  }
+}
+```
+
 ## Bibliografia
 
 - **C How to Program**, Paul J. Deitel & Harvey Deitel, 8th ed. 2015
