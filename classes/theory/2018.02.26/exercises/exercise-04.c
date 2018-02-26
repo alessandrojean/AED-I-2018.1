@@ -31,7 +31,7 @@ void printList (LinkedNode * first) {
 }
 
 void removeFirst (LinkedNode ** first) {
-  if (first != NULL) {
+  if (*first != NULL) {
     LinkedNode * next = (*first)->next;
     free(*first);
     *first = next;
