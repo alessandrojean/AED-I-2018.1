@@ -31,15 +31,8 @@ void printError(char * error) {
 SparseMatrix * createMatrix () {
   SparseMatrix * matrix = malloc(sizeof(SparseMatrix));
 
-  matrix->lines = malloc(sizeof(LinkedHead));
-  matrix->columns = malloc(sizeof(LinkedHead));
-
-  if (matrix->lines == NULL || matrix->columns == NULL)
+  if (matrix == NULL)
     printError("Memória indisponível.\n");
-
-  matrix->lines->position = matrix->columns->position = 0;
-  matrix->lines->next = matrix->columns->next = NULL;
-  matrix->lines->first = matrix->columns->first = NULL;
 
   return matrix;
 }
