@@ -5,7 +5,7 @@ typedef struct LinkedNode LinkedNode;
 struct LinkedNode {
   int data;
   int line, column;
-  LinkedNode * nextInColumn, * nextInLine;
+  LinkedNode * next;
 };
 
 typedef struct LinkedHead LinkedHead;
@@ -15,30 +15,26 @@ struct LinkedHead {
   LinkedNode * first;
 };
 
-// Para facilitar passar somente uma variável
-// nos parâmetros das funções.
-typedef struct SparseMatrix SparseMatrix;
-struct SparseMatrix {
-  LinkedHead * lines;
-  LinkedHead * columns;
-};
-
-void printError(char * error) {
-  fprintf(stderr, error);
+void printError() {
+  fprintf(stderr, "Memória indisponível.\n");
   exit(1);
 }
 
-SparseMatrix * createMatrix () {
-  SparseMatrix * matrix = malloc(sizeof(SparseMatrix));
+LinkedHead * createMatrix () {
+  LinkedHead * tmp = malloc(sizeof(LinkedHead));
 
-  if (matrix == NULL)
-    printError("Memória indisponível.\n");
+  if (tmp == NULL)
+    printError();
 
-  return matrix;
+  tmp->next = NULL;
+  tmp->first = NULL;
+  tmp->position = -1;
+
+  return tmp;
 }
 
 int main (int argc, char **argv) {
-  SparseMatrix * matrix = createMatrix();  
+  LinkedHead * head = createMatrix();
 
   return EXIT_SUCCESS;
 }
