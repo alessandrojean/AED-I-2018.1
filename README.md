@@ -1,5 +1,5 @@
 # AED-I-2018.1
-![Year](https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square) ![id](https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square) ![Last class](https://img.shields.io/badge/last_class-2018.02.26-green.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-C-yellow.svg?style=flat-square) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square)
+![Year](https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square) ![id](https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square) ![Last class](https://img.shields.io/badge/last_class-2018.02.28-green.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-C-yellow.svg?style=flat-square) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square)
 
 Algorithms written in the classes of Algorithms and Data Structures I (Algoritmos e Estruturas de Dados I) at Federal University of ABC (UFABC).
 
@@ -9,6 +9,7 @@ Algorithms written in the classes of Algorithms and Data Structures I (Algoritmo
 programming language.
 - **21/02/2018** *(Theory)*: Dynamic arrays.
 - **26/02/2018** *(Theory)*: Linked lists.
+- **28/02/2018** *(Theory)*: Basic notions about Algorithmic Complexity.
 
 ## Build instructions
 
