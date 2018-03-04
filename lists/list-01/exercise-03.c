@@ -3,6 +3,7 @@
 
 // Struct responsável por representar
 // um segmento no painel.
+typedef struct Segmento Segmento;
 struct Segmento {
   int a;
   int b;
@@ -12,6 +13,12 @@ struct Segmento {
   int f;
   int g;
   char digit;
+};
+
+typedef struct Digito Digito;
+struct Digito {
+  Segmento * segmento;
+  Digito * prox;
 };
 
 struct Segmento REPRESENTACOES[] = {
@@ -35,10 +42,10 @@ struct Segmento REPRESENTACOES[] = {
 
 const char HEXADECIMAL[] = "0123456789abcdef";
 
-char * converterParaHexadecimal (unsigned long long int numero, int * tam);
-struct Segmento ** converterParaSegmentos (char * numeroEmHexa, int n);
-int charParaIndex (char c);
-void imprimirRepresentacao (struct Segmento ** digitos, int n);
+Digito * converterParaHexadecimal (unsigned long long int numero);
+void imprimirRepresentacao (Digito * digitos);
+void erro();
+void liberarMemoria (Digito * digitos);
 
 int main (int argc, char **argv) {
   /*unsigned long long int n1 = 11073303771280, n2 = 11259375;
@@ -49,84 +56,75 @@ int main (int argc, char **argv) {
   printf("Digite um número: ");
   scanf("%lld", &n);
 
-  int tam = 0;
-  char * convertido = converterParaHexadecimal(n, &tam);
+  Digito * digitos = converterParaHexadecimal(n);
 
-  struct Segmento ** segmentos = converterParaSegmentos(convertido, tam);
+  imprimirRepresentacao(digitos);
 
-  imprimirRepresentacao(segmentos, tam);
+  liberarMemoria(digitos);
 
   return EXIT_SUCCESS;
 }
 
-char * converterParaHexadecimal (unsigned long long int numero, int * tamR) {
-  char * conversao = (char *) malloc(64 * sizeof(char));
-  int tam = 0, i = 0;
+Digito * converterParaHexadecimal (unsigned long long int numero) {
+  Digito * digitos = NULL, * tmp;
+  int i = 0;
 
   while (numero != 0) {
+    tmp = malloc(sizeof(Digito));
+    if (tmp == NULL)
+      erro();
+
     // Número equivalente em hexadecimal.
-    conversao[tam] = HEXADECIMAL[numero % 16];
-    tam++;
+    tmp->segmento = &(REPRESENTACOES[numero % 16]);
+
+    if (digitos == NULL)
+      tmp->prox = NULL;
+    else
+      tmp->prox = digitos;
+
+    digitos = tmp;
+
     numero /= 16;
   }
 
-  char temp;
-  for (; i < tam / 2; i++) {
-    temp = conversao[tam - i - 1];
-    conversao[tam - i - 1] = conversao[i];
-    conversao[i] = temp;
-  }
-
-  conversao[tam] = '\0';
-  *tamR = tam;
-
-  return conversao;
+  return digitos;
 }
 
-struct Segmento ** converterParaSegmentos (char * numeroEmHexa, int n) {
-  struct Segmento ** segmentos = (struct Segmento **) malloc(n * sizeof(struct Segmento *));
-  int ind = 0;
-
-  for (int i = 0; i < n; i++) {
-    ind = charParaIndex(numeroEmHexa[i]);
-    segmentos[i] = &REPRESENTACOES[ind];
-  }
-
-  return segmentos;
-}
-
-int charParaIndex (char c) {
-  if (c >= '0' && c <= '9') {
-    return c - '0';
-  } else if (c >= 'a' && c <= 'f') {
-    return c - 'a' + 10;
-  }
-
-  return -1;
-}
-
-void imprimirRepresentacao (struct Segmento ** digitos, int n) {
+void imprimirRepresentacao (Digito * digitos) {
   // Laço que cuida das 3 linhas.
   for (int i = 0; i < 3; i++) {
-    // Laço que cuida de cada segmento no vetor.
-    for (int j = 0; j < n; j++) {
+    // Laço que cuida de cada segmento na lista ligada.
+    for (Digito * c = digitos; c != NULL; c = c->prox) {
       if (i == 0) {
-        printf(digitos[j]->a ? " _ " : "   ");
-      } else if (i == 1) {
+        printf(c->segmento->a ? " _ " : "   ");
+      }else if (i == 1) {
         printf("%c%c%c", 
-          digitos[j]->f ? '|' : ' ',
-          digitos[j]->g ? '_' : ' ',
-          digitos[j]->b ? '|' : ' '
+          c->segmento->f ? '|' : ' ',
+          c->segmento->g ? '_' : ' ',
+          c->segmento->b ? '|' : ' '
         );
       } else {
         printf("%c%c%c", 
-          digitos[j]->e ? '|' : ' ',
-          digitos[j]->d ? '_' : ' ',
-          digitos[j]->c ? '|' : ' '
+          c->segmento->e ? '|' : ' ',
+          c->segmento->d ? '_' : ' ',
+          c->segmento->c ? '|' : ' '
         );
       }
       printf(" ");
     }
     printf("\n");
+  }
+}
+
+void erro () {
+  fprintf(stderr, "Falta de memória.\n");
+  exit(1);
+}
+
+void liberarMemoria (Digito * digitos) {
+  Digito * tmp;
+  for (Digito * curr = digitos; curr != NULL; curr = tmp) {
+    tmp = curr->prox;
+    free(curr);
   }
 }
