@@ -2,8 +2,6 @@
 #include<stdlib.h>
 #include<string.h>
 
-#define MAX_NUM 50
-
 // Opções para o menu
 #define OPT_INSERIR_CONTATO 1
 #define OPT_BUSCAR_POR_NOME 2
@@ -12,7 +10,7 @@
 #define OPT_SAIR 5
 #define TAM_MENU 5
 
-const char *MENU[] = {
+const char * MENU[] = {
   "Inserir um contato ao final da agenda.\0",
   "Buscar dados pelo Nome.\0",
   "Buscar dados pelo Telefone.\0",
@@ -20,104 +18,147 @@ const char *MENU[] = {
   "Sair.\0"
 };
 
+typedef struct Contato Contato;
 struct Contato {
   char nome[50];
   char telefone[50];
   char email[50];
+  Contato * prox;
 };
 
-void imprimirContato (struct Contato contato);
-void imprimirAgenda (struct Contato *agenda, int n);
-void inserirContato ();
-void buscarPorNome ();
-void buscarPorTelefone ();
-int tamanho ();
+void imprimirContato (Contato * contato);
+void imprimirAgenda (Contato * agenda);
+Contato * inserirContato (Contato * last);
+void buscarPorNome (Contato * agenda);
+void buscarPorTelefone (Contato * agenda);
+void erro();
+void liberarMemoria (Contato * agenda);
 
 int menu ();
-void realizarOpcao (int opt);
-
-struct Contato *agenda = NULL;
-int ultimaPosicao = -1;
 
 int main (int argc, char **argv) {
   // Inicializa a agenda.
-  agenda = (struct Contato *) malloc(MAX_NUM * sizeof(struct Contato));
+  Contato * agenda = NULL, * last;
 
   int opt = 0;
-  while (1) {
+  while (opt != OPT_SAIR) {
     opt = menu();
-    realizarOpcao(opt);
-    fflush(stdin);
-    fflush(stdout);
+
+    switch (opt) {
+      case OPT_INSERIR_CONTATO:
+        last = inserirContato(last);
+        if (agenda == NULL)
+          agenda = last;
+        break;
+      case OPT_BUSCAR_POR_NOME:
+        buscarPorNome(agenda);
+        break;
+      case OPT_BUSCAR_POR_TELEFONE:
+        buscarPorTelefone(agenda);
+        break;
+      case OPT_MOSTRAR_AGENDA:
+        imprimirAgenda(agenda);
+        break;
+      case OPT_SAIR:
+        break;
+      default:
+        printf("Opção inválida, tente novamente.\n");
+        break;
+    }
+
   }
+
+  liberarMemoria(agenda);
 
   return EXIT_SUCCESS;
 }
 
-void imprimirContato (struct Contato contato) {
-  printf("\nNome: %s\n", contato.nome);
-  printf("Telefone: %s\n", contato.telefone);
-  printf("E-mail: %s\n", contato.email);
+void imprimirContato (Contato * contato) {
+  printf("\nNome: %s\n", contato->nome);
+  printf("Telefone: %s\n", contato->telefone);
+  printf("E-mail: %s\n", contato->email);
 }
 
-void imprimirAgenda (struct Contato *agenda, int n) {
+void imprimirAgenda (Contato * agenda) {
   printf("\nAGENDA:\n\n");
 
-  if (n == 0) {
+  if (agenda == NULL) {
     printf("Agenda vazia.\n");
     return;
   }
 
-  for (int i = 0; i < n; i++) {
-    imprimirContato(agenda[i]);
+  for (Contato * c = agenda; c != NULL; c = c->prox) {
+    imprimirContato(c);
   }
 }
 
-void inserirContato () {
+Contato * inserirContato (Contato * last) {
   printf("\nNOVO CONTATO:\n\n");
 
-  ultimaPosicao++;
+  Contato * novo = malloc(sizeof(Contato));
+  if (novo == NULL)
+    erro();
 
   printf("Nome: ");
-  scanf("%s", agenda[ultimaPosicao].nome);
+  scanf("%s", &(novo->nome));
   printf("Telefone: ");
-  scanf("%s", agenda[ultimaPosicao].telefone);
+  scanf("%s", &(novo->telefone));
   printf("E-mail: ");
-  scanf("%s", agenda[ultimaPosicao].email); 
+  scanf("%s", &(novo->email)); 
+
+  novo->prox = NULL;
+
+  if (last != NULL)
+    last->prox = novo;
+
+  return novo;
 }
 
-void buscarPorNome () {
+void buscarPorNome (Contato * agenda) {
   printf("\nBUSCA POR NOME:\n\n");
 
   char nome[50];
   printf("Nome: ");
   scanf("%s", nome);
 
-  for (int i = 0, t = tamanho(); i < t; i++) {
-    if (strcmp(nome, agenda[i].nome) == 0) {
-      imprimirContato(agenda[i]);
+  for (Contato * c = agenda; c != NULL; c = c->prox) {
+    if (strcmp(nome, c->nome) == 0) {
+      imprimirContato(c);
       return;
     }
   }
+
+  printf("\nNenhum resultado.\n");
 }
 
-void buscarPorTelefone () {
+void buscarPorTelefone (Contato * agenda) {
   printf("\nBUSCA POR TELEFONE:\n\n");
 
   char telefone[50];
   printf("Telefone: ");
   scanf("%s", telefone);
 
-  for (int i = 0, t = tamanho(); i < t; i++) {
-    if (strcmp(telefone, agenda[i].telefone) == 0) {
-      imprimirContato(agenda[i]);
-      break;
+  for (Contato * c = agenda; c != NULL; c = c->prox) {
+    if (strcmp(telefone, c->telefone) == 0) {
+      imprimirContato(c);
+      return;
     }
   }
+
+  printf("\nNenhum resultado.\n");
 }
 
-int tamanho () {
-  return ultimaPosicao + 1;
+void erro () {
+  fprintf(stderr, "Falta de memória.\n");
+  exit(1);
+}
+
+void liberarMemoria (Contato * agenda) {
+  Contato * tmp;
+  for (Contato * curr = agenda; curr != NULL; curr = tmp) {
+    tmp = curr->prox;
+    free(curr);
+  }
 }
 
 int menu () {
@@ -132,27 +173,4 @@ int menu () {
   scanf("%d", &opt);
 
   return opt;
-}
-
-void realizarOpcao (int opt) {
-  switch (opt) {
-    case OPT_INSERIR_CONTATO:
-      inserirContato();
-      break;
-    case OPT_BUSCAR_POR_NOME:
-      buscarPorNome();
-      break;
-    case OPT_BUSCAR_POR_TELEFONE:
-      buscarPorTelefone();
-      break;
-    case OPT_MOSTRAR_AGENDA:
-      imprimirAgenda(agenda, tamanho());
-      break;
-    case OPT_SAIR:
-      exit(EXIT_SUCCESS);
-      break;
-    default:
-      printf("Opção inválida, finalizando.\n");
-      exit(EXIT_FAILURE);
-  }
 }
