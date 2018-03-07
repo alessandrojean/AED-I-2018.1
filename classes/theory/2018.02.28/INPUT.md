@@ -180,6 +180,30 @@ for (i = 1; i <= n; i *= 2)
 
 $$\sum_{i = 0}^{n} c^i = \frac{c^{n+1} - 1}{c - 1},\ c \neq 1$$
 
+### Classes de Complexidades
+
+Permite definir uma hierarquia na complexidade dos algoritmos.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/14254807/37095690-5fa4f62c-21f5-11e8-8d04-f2b5cd3445d7.png">
+</p>
+
+$$O(1) \subset O(\log(n)) \subset O(n) \subset O(n^2) \subset O(2^n) \subset O(n!) \subset O(n^n)$$
+
+- $\forall a, b, a > 0, O((\log(n))^b) \subset O(n^a)$
+- $\forall a, b, a > 1, O(n^b) \subset O(a^n)$
+
+| Complexidade                | Nome         | Exemplo                                   |
+| --------------------------- | ------------ | ----------------------------------------- |
+| $O(1)$                      | Constante    | Expressões e atribuições inteiras e reais | 
+| $O(\log(\log(n)))$          | Logarítmica  | Busca por interpolação                    |
+| $O(\log(n))$                | Logarítmica  | Busca binária                             |
+| $O(n)$                      | Linear       | Busca sequencial                          |
+| $O(n\log(n)) = O(\log(n!))$ | Quase linear | Métodos de ordenação eficientes           |
+| $O(n^c)$                    | Polinomial   | Métodos de ordenação simples              |
+| $O(c^n), c>1$               | Exponencial  | Todas as combinações de elementos         |
+| $O(n!)$                     | Fatorial     | Todas as permutações de elementos         |
+
 ## Bibliografia
 
 - **Introduction to Algorithms**, 3rd Edition. Thomas H. Cormen, Charles E. 
@@ -189,5 +213,4 @@ Sedgewick and Philippe Flajolet, 2013.
 - **Algorithms Design: Foundation, Analysis and Internet Examples**. Michael
 T. Goodrich and Roberto Tamassia, 2002.
 - **Projeto de Algoritmos**, 2ª edição. Nivio Ziviani, 2007.
-- Wikipédia: [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation), 
-[Master theorem](https://en.wikipedia.org/wiki/Master_theorem).
+- Wikipédia: [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)

@@ -175,6 +175,30 @@ for (i = 1; i <= n; i *= 2)
 
 <p align="center"><img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/55fc71b3c68083208f0382d7114a17fb.svg?invert_in_darkmode" align=middle width=175.98569999999998pt height=44.897324999999995pt/></p>
 
+### Classes de Complexidades
+
+Permite definir uma hierarquia na complexidade dos algoritmos.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/14254807/37095690-5fa4f62c-21f5-11e8-8d04-f2b5cd3445d7.png">
+</p>
+
+<p align="center"><img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/8fc75d5cd49a90d0d8f75a5e42d6ed68.svg?invert_in_darkmode" align=middle width=441.5994pt height=18.312359999999998pt/></p>
+
+- <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/c9dcd957e46bb0594dd5b0ae282c0013.svg?invert_in_darkmode" align=middle width=240.19165499999997pt height=27.91271999999999pt/>
+- <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/34dd18666f679c88f07733e9cc7a9658.svg?invert_in_darkmode" align=middle width=193.20625499999997pt height=27.91271999999999pt/>
+
+| Complexidade                | Nome         | Exemplo                                   |
+| --------------------------- | ------------ | ----------------------------------------- |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/1e2f931ee6c0b8e7a51a7b0d123d514f.svg?invert_in_darkmode" align=middle width=34.000065pt height=24.65759999999998pt/>                      | Constante    | Expressões e atribuições inteiras e reais | 
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/9cfb757e7a532bd2b60bedda7eecd0ed.svg?invert_in_darkmode" align=middle width=103.684515pt height=24.65759999999998pt/>          | Logarítmica  | Busca por interpolação                    |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/9cf64727487f57b15f4c7a257f1dbaca.svg?invert_in_darkmode" align=middle width=69.66613500000001pt height=24.65759999999998pt/>                | Logarítmica  | Busca binária                             |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/1f08ccc9cd7309ba1e756c3d9345ad9f.svg?invert_in_darkmode" align=middle width=35.647755pt height=24.65759999999998pt/>                      | Linear       | Busca sequencial                          |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/ecea98c9b755ce492d28342c05754a5f.svg?invert_in_darkmode" align=middle width=178.422255pt height=24.65759999999998pt/> | Quase linear | Métodos de ordenação eficientes           |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/292cb526603bbc5fc40020cdf5d34101.svg?invert_in_darkmode" align=middle width=42.344445pt height=24.65759999999998pt/>                    | Polinomial   | Métodos de ordenação simples              |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/7e534f4a804a9e4c7232feb098017b0b.svg?invert_in_darkmode" align=middle width=86.399115pt height=24.65759999999998pt/>               | Exponencial  | Todas as combinações de elementos         |
+| <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.02.28/svgs/f8457d613fcf54ef6069f4417d14b532.svg?invert_in_darkmode" align=middle width=40.213965pt height=24.65759999999998pt/>                     | Fatorial     | Todas as permutações de elementos         |
+
 ## Bibliografia
 
 - **Introduction to Algorithms**, 3rd Edition. Thomas H. Cormen, Charles E. 
@@ -184,5 +208,4 @@ Sedgewick and Philippe Flajolet, 2013.
 - **Algorithms Design: Foundation, Analysis and Internet Examples**. Michael
 T. Goodrich and Roberto Tamassia, 2002.
 - **Projeto de Algoritmos**, 2ª edição. Nivio Ziviani, 2007.
-- Wikipédia: [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation), 
-[Master theorem](https://en.wikipedia.org/wiki/Master_theorem).
+- Wikipédia: [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
