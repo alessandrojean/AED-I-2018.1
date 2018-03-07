@@ -293,8 +293,7 @@ Goodrich and Roberto Tamassia, 2002
 #### Considerações sobre o Teorema Mestre apresentado
 
 - O comportamento assintotico de <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/cc4152a1ba8a0ec113e9f2062a489b7d.svg?invert_in_darkmode" align=middle width=34.541760000000004pt height=24.65759999999998pt/> não muda se <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/8b0e862411b93d9281b31d08f4fb1194.svg?invert_in_darkmode" align=middle width=41.76876pt height=27.94572000000001pt/>
-é substituido por <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/6c79fd18d14d2691d69e0d3c674db56e.svg?invert_in_darkmode" align=middle width=57.293940000000006pt height=27.94572000000001pt/> ou
-<img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/8e9070dfc75cdd785ba51c06adee10c4.svg?invert_in_darkmode" align=middle width=57.293940000000006pt height=27.94572000000001pt/>
+é substituido por <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/6c79fd18d14d2691d69e0d3c674db56e.svg?invert_in_darkmode" align=middle width=57.293940000000006pt height=27.94572000000001pt/> ou <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/8e9070dfc75cdd785ba51c06adee10c4.svg?invert_in_darkmode" align=middle width=57.293940000000006pt height=27.94572000000001pt/>
 - Nem sempre pode ser aplicado
   - <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/d1daa928f8f5a679d7d8c97f15ecf2f8.svg?invert_in_darkmode" align=middle width=152.750565pt height=27.94572000000001pt/>
   - <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/classes/theory/2018.03.07/svgs/60c4ec0dca3c26433d601a1bce7c3ca0.svg?invert_in_darkmode" align=middle width=138.68382pt height=27.94572000000001pt/>

@@ -296,8 +296,7 @@ Goodrich and Roberto Tamassia, 2002
 #### Considerações sobre o Teorema Mestre apresentado
 
 - O comportamento assintotico de $T(n)$ não muda se $T\left(\frac{n}{b}\right)$
-é substituido por $T\left(\left\lceil\frac{n}{b}\right\rceil\right)$ ou
-$T\left(\left\lfloor\frac{n}{b}\right\rfloor\right)$
+é substituido por $T\left(\left\lceil\frac{n}{b}\right\rceil\right)$ ou $T\left(\left\lfloor\frac{n}{b}\right\rfloor\right)$
 - Nem sempre pode ser aplicado
   - $T(n) = 4nT\left(\frac{n}{2}\right) + 3^n$
   - $T(n) = \frac{1}{2} T\left(\frac{n}{2}\right) + n$
