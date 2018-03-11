@@ -64,3 +64,32 @@ operações sobre **conjuntos** (não há repetições de elementos).
    | Eliminar um elemento       |                 |         |                  |
    | Produto cartesiano         |                 |         |                  |
    | Conjunto potência          |                 |         |                  |
+
+## Complexidade de algoritmos recursivos
+
+1. Qual a complexidade assintótica das seguintes recorrências e funções?
+1. $T(n) = 9T\left(\frac{n}{2}\right) + n^2$
+1. $T(n) = 4T\left(\frac{n}{2}\right) + n^2\sqrt{n}$
+1. $T(n) = 5T\left(\frac{n}{5}\right) + \frac{n}{2}$
+1. $T(n) = 3T\left(\frac{n}{3}\right) + \sqrt{n}$
+
+   ```c
+   void e (int n) {
+     if (n <= 1)
+       return;
+     int i = 1;
+     for (; i <= n; i++)
+       printf("*");
+     e(0.8 * n);
+   }
+
+   void f (int n) {
+     if (n <= 2)
+       return;
+     int i = 1, count = 0;
+     for (; i <= 8; i++)
+       f(n / 2);
+     for (i = 1; i <= n * n * n; i++)
+       count++;
+   }
+   ```

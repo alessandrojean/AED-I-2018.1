@@ -8,9 +8,9 @@ crescimento. Use o mesmo número caso duas funções tenham a mesma ordem de
 crescimento, i.e. <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/1fbce93542e8f17dc1d3a148dde2a325.svg?invert_in_darkmode" align=middle width=111.04087500000001pt height=24.65759999999998pt/>. Justifique de forma apropriada
 sua ordenação.
 
-   | Função | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/dcca91a3a77c6055fef6c77fdf4b44c5.svg?invert_in_darkmode" align=middle width=16.34523pt height=21.839399999999983pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/b0cfd2abfaffc29bb397536441842532.svg?invert_in_darkmode" align=middle width=56.49187500000001pt height=24.65759999999998pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/88ae1e7d87608a5ea339db7350692c67.svg?invert_in_darkmode" align=middle width=16.34523pt height=21.839399999999983pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/387c646a307de8023b04bffb886f24ee.svg?invert_in_darkmode" align=middle width=50.038395pt height=29.19113999999999pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/a9f328d5a2bf4c15e050611fa6a39c28.svg?invert_in_darkmode" align=middle width=29.707260000000005pt height=29.19113999999999pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/a4dae61405b4eb1ccecbcc5700b25f03.svg?invert_in_darkmode" align=middle width=32.87691pt height=21.18732pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/38770a8d9227f63841ed3c92db3d7e51.svg?invert_in_darkmode" align=middle width=53.771025pt height=26.76201000000001pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/2d12bf257d5566a2e9a51e2dbbf0b0cf.svg?invert_in_darkmode" align=middle width=55.528935pt height=24.65759999999998pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/ebcbccbc670c95a08bb5121f73b0b80f.svg?invert_in_darkmode" align=middle width=26.21223pt height=21.839399999999983pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/cc8777dc41169b621abb9344d4935585.svg?invert_in_darkmode" align=middle width=22.332750000000004pt height=26.76201000000001pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/124ea1296f906499daca48407c9fee04.svg?invert_in_darkmode" align=middle width=51.259725pt height=29.534339999999986pt/> |
-   | ------ | - | - | - | - | - | - | - | - | - | - | - |
-   | Ordem  | | | | | | | | | | | | |
+| Função | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/dcca91a3a77c6055fef6c77fdf4b44c5.svg?invert_in_darkmode" align=middle width=16.34523pt height=21.839399999999983pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/b0cfd2abfaffc29bb397536441842532.svg?invert_in_darkmode" align=middle width=56.49187500000001pt height=24.65759999999998pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/88ae1e7d87608a5ea339db7350692c67.svg?invert_in_darkmode" align=middle width=16.34523pt height=21.839399999999983pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/387c646a307de8023b04bffb886f24ee.svg?invert_in_darkmode" align=middle width=50.038395pt height=29.19113999999999pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/a9f328d5a2bf4c15e050611fa6a39c28.svg?invert_in_darkmode" align=middle width=29.707260000000005pt height=29.19113999999999pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/a4dae61405b4eb1ccecbcc5700b25f03.svg?invert_in_darkmode" align=middle width=32.87691pt height=21.18732pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/38770a8d9227f63841ed3c92db3d7e51.svg?invert_in_darkmode" align=middle width=53.771025pt height=26.76201000000001pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/2d12bf257d5566a2e9a51e2dbbf0b0cf.svg?invert_in_darkmode" align=middle width=55.528935pt height=24.65759999999998pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/ebcbccbc670c95a08bb5121f73b0b80f.svg?invert_in_darkmode" align=middle width=26.21223pt height=21.839399999999983pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/cc8777dc41169b621abb9344d4935585.svg?invert_in_darkmode" align=middle width=22.332750000000004pt height=26.76201000000001pt/> | <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/124ea1296f906499daca48407c9fee04.svg?invert_in_darkmode" align=middle width=51.259725pt height=29.534339999999986pt/> |
+| ------ | - | - | - | - | - | - | - | - | - | - | - |
+| Ordem  | | | | | | | | | | | | |
 
 
 1. Responda se as seguintes afirmações são verdadeiras ou falsas. Justifique de
@@ -64,3 +64,32 @@ operações sobre **conjuntos** (não há repetições de elementos).
    | Eliminar um elemento       |                 |         |                  |
    | Produto cartesiano         |                 |         |                  |
    | Conjunto potência          |                 |         |                  |
+
+## Complexidade de algoritmos recursivos
+
+1. Qual a complexidade assintótica das seguintes recorrências e funções?
+   1. <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/7eda8185a7bb52c63b4c7ec0a9535e6e.svg?invert_in_darkmode" align=middle width=142.95798pt height=27.94572000000001pt/>
+   1. <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/2a746b13435ce5d6bdd317dad6c15026.svg?invert_in_darkmode" align=middle width=167.345805pt height=27.94572000000001pt/>
+   1. <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/c346146eed2fb6bc0133b918fcb42314.svg?invert_in_darkmode" align=middle width=136.63716000000002pt height=27.94572000000001pt/>
+   1. <img src="https://rawgit.com/alessandrojean/AED-I-2018.1/master/lists/list-04/svgs/dd7e2bd6b1410419955d9bd782ffe322.svg?invert_in_darkmode" align=middle width=150.10396500000002pt height=27.94572000000001pt/>
+
+   ```c
+   void e (int n) {
+     if (n <= 1)
+       return;
+     int i = 1;
+     for (; i <= n; i++)
+       printf("*");
+     e(0.8 * n);
+   }
+
+   void f (int n) {
+     if (n <= 2)
+       return;
+     int i = 1, count = 0;
+     for (; i <= 8; i++)
+       f(n / 2);
+     for (i = 1; i <= n * n * n; i++)
+       count++;
+   }
+   ```
