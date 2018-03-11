@@ -50,7 +50,7 @@ ser lido como sequência de caracteres `'0'` e `'1'` terminada no caractere
 
     000001010101111001101111011110001001000110100010101100111100010010000b
 
-a saída do progra,a deve ser a seguinte
+a saída do programa deve ser a seguinte
 
      _       _       _   _      _   _       _   _   _   _   _   _
     |_| |_  |    _| |_  |_   |  _|  _| |_| |_  |_    | |_| |_| | |
