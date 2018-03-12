@@ -15,12 +15,29 @@ programming language](classes/laboratory/2018.02.19/part-2/).
 
 ## Build instructions
 
+Use the following commands to compile any `.c` file in this repository.
+
 ```bash
+# Assuming you have the GNU C Compiler in
+# your PATH, but can be MinGW or the Visual
+# Studio compiler too if you are under an 
+# Windows environment.
+
 # Compiles the file in the bin folder.
 gcc file.c -o bin/file
+# If the compiler complain about the folder,
+# create it using the command below, and
+# run the command above again.
+mkdir bin
 # Run the program.
 ./bin/file
 ```
+
+If you use [Visual Studio Code](https://code.visualstudio.com), you can
+setup your envinroment using 
+[tasks](https://code.visualstudio.com/docs/editor/tasks) 
+and the Microsoft official 
+[C/C++ extension](https://code.visualstudio.com/docs/languages/cpp), that allows you to debug and lint your code.
 
 ## License
 
