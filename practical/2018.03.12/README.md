@@ -69,7 +69,7 @@ para os cálculos internos.
 Imprimir o resultado final da expressão pós-fixa, com duas casas decimais. 
 Caso a expressão seja inválida, imprimir `"ERRO"`. Por exemplo, a expressão 
 `27++` é inválida. A equivalente dela em notação infixa seria `(2+7)+`. Veja 
-que o segundo operador ``+` torna a expressão inválida.
+que o segundo operador `+` torna a expressão inválida.
 
 ## Exemplos
 
