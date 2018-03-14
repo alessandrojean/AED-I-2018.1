@@ -84,7 +84,7 @@ TreeNode * delete (TreeNode * t, Key key) {
     t->pRight = delete(t->pRight, key);
   else {
     if (t->pLeft == NULL || t->pRight == NULL) {
-      TreeNode * tmp = (t->pLeft == NULL) ? t->pLeft : t->pRight;
+      TreeNode * tmp = (t->pLeft == NULL) ? t->pRight : t->pLeft;
       free(t);
       return tmp;
     }
