@@ -1,20 +1,34 @@
 # AED-I-2018.1
-![Year](https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square) ![id](https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square) ![Last class](https://img.shields.io/badge/last_class-2018.03.14-green.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-C-yellow.svg?style=flat-square) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square)
+![Year](https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square) ![id](https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square) ![Last class](https://img.shields.io/badge/last_class-2018.03.19-green.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-C-yellow.svg?style=flat-square) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square)
 
 Algorithms written in the classes of Algorithms and Data Structures I (Algoritmos e Estruturas de Dados I) at Federal University of ABC (UFABC).
 
 ## Classes
 
-- **19/02/2018** *(Laboratory)*: [Subject introduction](classes/laboratory/2018.02.19/part-1/). [Introduction to the C
-programming language](classes/laboratory/2018.02.19/part-2/).
-- **21/02/2018** *(Theory)*: [Dynamic arrays](classes/theory/2018.02.21/).
-- **26/02/2018** *(Theory)*: [Linked lists](classes/theory/2018.02.26/).
-- **28/02/2018** *(Theory)*: [Basic notions about Algorithmic Complexity](classes/theory/2018.02.28/).
-- **05/03/2018** *(Laboratory)*: [Linked list practical exercise](practical/2018.03.05/).
-- **07/03/2018** *(Theory)*: [Basic notions about Algorithmic Complexity *(continuation)*](classes/theory/2018.03.07/).
-- **12/03/2018** *(Laboratory)*: [Stacks and Queues](classes/laboratory/2018.03.12/). [Stack practical exercise](practical/2018.03.12/).
+- **19/02/2018** *(Laboratory)*: [Subject introduction]. [Introduction to the C
+programming language].
+- **21/02/2018** *(Theory)*: [Dynamic arrays].
+- **26/02/2018** *(Theory)*: [Linked lists].
+- **28/02/2018** *(Theory)*: [Basic notions about Algorithmic Complexity].
+- **05/03/2018** *(Laboratory)*: [Linked list practical exercise].
+- **07/03/2018** *(Theory)*: [Basic notions about Algorithmic Complexity *(continuation)*].
+- **12/03/2018** *(Laboratory)*: [Stacks and Queues]. [Stack practical exercise].
 - **14/03/2018** *(Theory)*: [Search algorithms and Binary Search
-Trees](classes/theory/2018.03.14/).
+Trees].
+- **19/03/2018** *(Laboratory)*: [Binary Search Tree practical exercise].
+
+[Subject introduction]: classes/laboratory/2018.02.19/part-1/
+[Introduction to the C programming language]: classes/laboratory/2018.02.19/part-2/
+[Dynamic arrays]: classes/theory/2018.02.21/
+[Linked lists]: classes/theory/2018.02.26/
+[Basic notions about Algorithmic Complexity]: classes/theory/2018.02.28/
+[Linked list practical exercise]: practical/2018.03.05/
+[Basic notions about Algorithmic Complexity *(continuation)*]: classes/theory/2018.03.07/
+[Stacks and Queues]: classes/laboratory/2018.03.12/
+[Stack practical exercise]: practical/2018.03.12/
+[Search algorithms and Binary Search Trees]: classes/theory/2018.03.14/
+[Binary Search Tree practical exercise]: practical/2018.03.19/
+
 
 ## Build instructions
 
