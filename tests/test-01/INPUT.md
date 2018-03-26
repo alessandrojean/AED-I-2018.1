@@ -43,17 +43,26 @@ como: `sufixo.c`.
   <tbody>
     <tr>
       <td>Exemplo 01</td>
-      <td><pre><code>professor<br>sor</code></pre></td>
+      <td>
+        <pre><code>professor
+sor</code></pre>
+      </td>
       <td valign="top"><pre><code>SIM<br> </code></pre></td>
     </tr>
     <tr>
       <td>Exemplo 02</td>
-      <td><pre><code>estudante<br>estuda</code></pre></td>
+      <td>
+        <pre><code>estudante
+estuda</code></pre>
+      </td>
       <td valign="top"><pre><code>NAO<br> </code></pre></td>
     </tr>
     <tr>
       <td>Exemplo 03</td>
-      <td><pre><code>estudante<br>corante</code></pre></td>
+      <td>
+        <pre><code>estudante
+corante</code></pre>
+      </td>
       <td valign="top"><pre><code>NAO<br> </code></pre></td>
     </tr>
   </tbody>
