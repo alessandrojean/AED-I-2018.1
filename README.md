@@ -1,7 +1,15 @@
 # AED-I-2018.1
-![Year](https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square) ![id](https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square) ![Last class](https://img.shields.io/badge/last_class-2018.03.19-green.svg?style=flat-square) ![Language](https://img.shields.io/badge/language-C-yellow.svg?style=flat-square) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square)
+![Year][year] ![Id][id] ![T-P-I][tpi] ![Last class][last-class]
+![Language][language] ![IDE][ide]
 
 Algorithms written in the classes of Algorithms and Data Structures I (Algoritmos e Estruturas de Dados I) at Federal University of ABC (UFABC).
+
+[year]: https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square
+[id]: https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square
+[tpi]: https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square
+[last-class]: https://img.shields.io/badge/last_class-2018.03.26-green.svg?style=flat-square
+[language]: https://img.shields.io/badge/language-C-yellow.svg?style=flat-square
+[ide]: https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square
 
 ## Classes
 
@@ -16,6 +24,8 @@ programming language].
 - **14/03/2018** *(Theory)*: [Search algorithms and Binary Search
 Trees].
 - **19/03/2018** *(Laboratory)*: [Binary Search Tree practical exercise].
+- **21/03/2018** *(Theory)*: Review of exercises.
+- **26/03/2018** *(Laboratory)*: **[First test]**.
 
 [Subject introduction]: classes/laboratory/2018.02.19/part-1/
 [Introduction to the C programming language]: classes/laboratory/2018.02.19/part-2/
@@ -28,6 +38,7 @@ Trees].
 [Stack practical exercise]: practical/2018.03.12/
 [Search algorithms and Binary Search Trees]: classes/theory/2018.03.14/
 [Binary Search Tree practical exercise]: practical/2018.03.19/
+[First test]: tests/test-01/
 
 
 ## Build instructions
