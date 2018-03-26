@@ -29,7 +29,8 @@ em uma pilha. O `push` é responsável por uma entrada de 0 a 9, enquanto o
 
 Escreva um programa em C que leia um *texto A* arbitrariamente grande e um 
 *texto B* de no máximo 100 caracteres, e se *texto B* é sufixo de
-*texto A* imprima `SIM`, caso contrário, imprima `NAO`.
+*texto A* imprima `SIM`, caso contrário, imprima `NAO`. Salve o programa
+como: `sufixo.c`.
 
 ### Exemplos
 
