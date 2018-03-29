@@ -119,7 +119,7 @@ B
 M
 S
 </pre></td>
-      <td valign="top"><pre>[1 1 5 0 0 ]
+      <td valign="top"><pre><code>[1 1 5 0 0 ]
 [0 0 0 1 1 ]
 
 [1 0 ]
@@ -130,7 +130,7 @@ S
 
 [2 10 ]
 [5 0 ]
-</pre></td>
+</pre></code></td>
     </tr>
   </tbody>
 </table>
@@ -158,7 +158,7 @@ B
 M
 S
 </pre></td>
-      <td valign="top"><pre>[0 0 5 0 0 0 8 0 0 0 ]
+      <td valign="top"><pre><code>[0 0 5 0 0 0 8 0 0 0 ]
 [0 0 0 0 0 0 0 0 0 0 ]
 [0 0 0 0 0 0 0 0 0 0 ]
 [0 0 8 0 0 0 0 0 0 4 ]
@@ -184,7 +184,7 @@ S
 [0 0 0 ]
 [0 0 0 ]
 [0 0 0 ]
-</pre></td>
+</code></pre></td>
     </tr>
   </tbody>
 </table>
