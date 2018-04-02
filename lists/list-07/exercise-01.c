@@ -108,6 +108,15 @@ TreeNode * rotateLeft (TreeNode * root) {
   return pivot;
 }
 
+/**
+ * Make the node with the key specified the
+ * new root of the BST A. If the node it's
+ * not present, it will be added to A.
+ * 
+ * References:
+ * https://stackoverflow.com/questions/30475115/given-a-bst-and-a-node-in-bst-make-that-node-as-new-root-of-the-tree
+ * https://en.wikipedia.org/wiki/Tree_rotation
+ **/
 TreeNode * makeNewRoot (TreeNode * A, Key key) {
   // If an element with the key it's not in the
   // tree, we need to insert it first.
