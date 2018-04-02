@@ -29,7 +29,7 @@ parâmetros adicionais:
   </thead>
   <tbody>
     <tr>
-      <td><code>I [RA] [Nota</code></td>
+      <td><code>I [RA] [Nota]</code></td>
       <td><code>I 90 8</code></td>
       <td>
         <b>Insere</b> um item na árvore, com o RA e a nota informados. RA e nota
