@@ -7,7 +7,7 @@ Algorithms written in the classes of Algorithms and Data Structures I (Algoritmo
 [year]: https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square
 [id]: https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square
 [tpi]: https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square
-[last-class]: https://img.shields.io/badge/last_class-2018.04.02-green.svg?style=flat-square
+[last-class]: https://img.shields.io/badge/last_class-2018.04.04-green.svg?style=flat-square
 [language]: https://img.shields.io/badge/language-C-yellow.svg?style=flat-square
 [ide]: https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square
 
@@ -27,6 +27,7 @@ programming language].
 - **26/03/2018** *(Laboratory)*: **[First test]**.
 - **28/03/2018** *(Theory)*: [AVL Tree].
 - **02/04/2018** *(Laboratory)*: [Second Binary Search Tree practical exercise].
+- **04/04/2018** *(Theory)*: [AVL Tree *(continuation)*].
 
 [Subject introduction]: classes/laboratory/2018.02.19/part-1/
 [Introduction to the C programming language]: classes/laboratory/2018.02.19/part-2/
@@ -42,7 +43,7 @@ programming language].
 [First test]: tests/test-01/
 [AVL Tree]: classes/theory/2018.03.28/
 [Second Binary Search Tree practical exercise]: practical/2018.04.02/
-
+[AVL Tree *(continuation)*]: classes/theory/2018.04.04/
 
 ## Build instructions
 
