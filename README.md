@@ -45,7 +45,7 @@ programming language].
 [AVL Tree]: classes/theory/2018.03.28/
 [Second Binary Search Tree practical exercise]: practical/2018.04.02/
 [AVL Tree *(continuation)*]: classes/theory/2018.04.04/
-[AVL Tree practical exercise]: practical/2018-04-09/
+[AVL Tree practical exercise]: practical/2018.04.09/
 
 ## Build instructions
 
