@@ -7,7 +7,7 @@ Algorithms written in the classes of Algorithms and Data Structures I (Algoritmo
 [year]: https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square
 [id]: https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square
 [tpi]: https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square
-[last-class]: https://img.shields.io/badge/last_class-2018.04.09-green.svg?style=flat-square
+[last-class]: https://img.shields.io/badge/last_class-2018.04.16-green.svg?style=flat-square
 [language]: https://img.shields.io/badge/language-C-yellow.svg?style=flat-square
 [ide]: https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square
 
@@ -29,6 +29,7 @@ programming language].
 - **02/04/2018** *(Laboratory)*: [Second Binary Search Tree practical exercise].
 - **04/04/2018** *(Theory)*: [AVL Tree *(continuation)*].
 - **09/04/2018** *(Laboratory)*: [AVL Tree practical exercise].
+- **16/04/2018** *(Laboratory)*: [Basic sorting algorithms]. [Linked list sort practical exercise].
 
 [Subject introduction]: classes/laboratory/2018.02.19/part-1/
 [Introduction to the C programming language]: classes/laboratory/2018.02.19/part-2/
@@ -46,6 +47,8 @@ programming language].
 [Second Binary Search Tree practical exercise]: practical/2018.04.02/
 [AVL Tree *(continuation)*]: classes/theory/2018.04.04/
 [AVL Tree practical exercise]: practical/2018.04.09/
+[Basic sorting algorithms]: classes/laboratory/2018.04.16/
+[Linked list sort practical exercise]: practical/2018.04.16/
 
 ## Build instructions
 
@@ -58,13 +61,13 @@ Use the following commands to compile any `.c` file in this repository.
 # Windows environment.
 
 # Compiles the file in the bin folder.
-gcc file.c -o bin/file
+$ gcc file.c -o bin/file
 # If the compiler complain about the folder,
 # create it using the command below, and
 # run the command above again.
-mkdir bin
+$ mkdir bin
 # Run the program.
-./bin/file
+$ ./bin/file
 ```
 
 If you use [Visual Studio Code](https://code.visualstudio.com), you can
@@ -72,6 +75,22 @@ setup your envinroment using
 [tasks](https://code.visualstudio.com/docs/editor/tasks) 
 and the Microsoft official 
 [C/C++ extension](https://code.visualstudio.com/docs/languages/cpp), that allows you to debug and lint your code.
+
+If you want to compile any markdown file with LaTeX, you need
+to run:
+
+```bash
+# Assuming you have Python in your PATH.
+
+# Install readme2tex.
+$ pip install readme2tex
+# Generate the README with the LaTeX equations
+# in an separated svg folder.
+$ python -m readme2tex --output README.md INPUT.md
+```
+
+After that, you need to replace and correct the svg folder from the root
+path of the repository to the relative path of the folder in the output file.
 
 ## License
 
