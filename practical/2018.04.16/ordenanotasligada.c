@@ -1,3 +1,6 @@
+/**
+ * Developed by @alessandrojean and @IsabellaLima
+ **/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,6 +16,7 @@ struct LinkedNode {
 LinkedNode * insert (LinkedNode * last, int ra, char * nome, int nota);
 int searchByRA (LinkedNode * first, int ra);
 int selectionSort (LinkedNode ** first, LinkedNode ** last, int option);
+int insertionSort (LinkedNode ** first, LinkedNode ** last, int option);
 void swapLinkedNodes (LinkedNode ** first, LinkedNode * x, LinkedNode * y);
 void printLinkedList (LinkedNode * first);
 void freeLinkedList (LinkedNode * first);
@@ -33,9 +37,9 @@ int main (int argc, char ** argv) {
     } else if (o == 'O') {
       int alg, op, comp;
       scanf("%d %d", &alg, &op);
-      if (alg == 1) {
-        comp = selectionSort(&first, &last, op);
-      }
+      comp = (alg == 1)
+        ? selectionSort(&first, &last, op)
+        : insertionSort(&first, &last, op);
       printf("Comparacoes=%d\n", comp);
     } else if (o == 'B') {
       int ra, pos;
@@ -48,6 +52,8 @@ int main (int argc, char ** argv) {
 
     scanf("\n%c", &o);
   }
+
+  freeLinkedList(first);
 
   return EXIT_SUCCESS;
 }
@@ -66,7 +72,6 @@ LinkedNode * insert (LinkedNode * last, int ra, char * nome, int nota) {
   tmp->nota = nota;
   tmp->next = NULL;
   tmp->prev = last;
-
   if (last != NULL) {
     last->next = tmp;
   }
@@ -135,6 +140,50 @@ int selectionSort (LinkedNode ** first, LinkedNode ** last, int option) {
   *last = i;
 
   return count;
+}
+
+/**
+ * Ordena a lista ligada com o algoritmo
+ * Insertion Sort, atualizando o nó cabeça
+ * e o final caso necessário.
+ * O campo chave é especificado através de option,
+ * podendo assumir:
+ * 
+ * 1) RA;
+ * 2) Nome.
+ * 
+ * Retorna a quantidade de comparações realizadas.
+ **/
+int insertionSort (LinkedNode ** first, LinkedNode ** last, int option) {
+  LinkedNode * i, * nextI, * j, * key;
+  long int comp = 0;
+
+  // Itera de 1 até n.
+  for (i = (*first)->next; i != NULL; i = nextI) {
+    // Armazena o nó com a chave a comparar.
+    key = j = i;
+    // Armazena o próximo a i,
+    // pois este pode ser modificado.
+    nextI = i->next;
+    // Enquanto j não está na posição correta.
+    while (j->prev != NULL && ++comp &&
+           ((option == 1 && j->prev->ra > key->ra) ||
+            (option == 2 && strcmp(j->prev->nome, key->nome) > 0))) {
+      
+      // Armazena o anterior a j para modificar o final.
+      LinkedNode * prevJ = j->prev;
+      // Troca j - 1 com j.
+      swapLinkedNodes(first, prevJ, j);
+
+      // Se o j anteriormente era o
+      // fim da lista, mude-o para o
+      // novo fim, prevJ.
+      if (*last == j)
+        *last = prevJ;
+    }
+  }
+
+  return comp;
 }
 
 /**
