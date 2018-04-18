@@ -7,7 +7,7 @@ Algorithms written in the classes of Algorithms and Data Structures I (Algoritmo
 [year]: https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square
 [id]: https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square
 [tpi]: https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square
-[last-class]: https://img.shields.io/badge/last_class-2018.04.16-green.svg?style=flat-square
+[last-class]: https://img.shields.io/badge/last_class-2018.04.18-green.svg?style=flat-square
 [language]: https://img.shields.io/badge/language-C-yellow.svg?style=flat-square
 [ide]: https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square
 
@@ -30,6 +30,7 @@ programming language].
 - **04/04/2018** *(Theory)*: [AVL Tree *(continuation)*].
 - **09/04/2018** *(Laboratory)*: [AVL Tree practical exercise].
 - **16/04/2018** *(Laboratory)*: [Basic sorting algorithms]. [Linked list sort practical exercise].
+- **18/04/2018** *(Theory)*: [Mergesort and Quicksort].
 
 [Subject introduction]: classes/laboratory/2018.02.19/part-1/
 [Introduction to the C programming language]: classes/laboratory/2018.02.19/part-2/
@@ -49,6 +50,7 @@ programming language].
 [AVL Tree practical exercise]: practical/2018.04.09/
 [Basic sorting algorithms]: classes/laboratory/2018.04.16/
 [Linked list sort practical exercise]: practical/2018.04.16/
+[Mergesort and Quicksort]: classes/theory/2018.04.18/
 
 ## Build instructions
 
