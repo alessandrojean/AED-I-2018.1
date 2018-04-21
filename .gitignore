@@ -3,7 +3,7 @@ bin/
 *.zip
 *.exe
 *.out
-*.pdf
+pdfs/
 
 # LaTeX stuff.
 *.aux
