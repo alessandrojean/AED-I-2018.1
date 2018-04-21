@@ -4,3 +4,14 @@ bin/
 *.exe
 *.out
 *.pdf
+
+# LaTeX stuff.
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+_minted*
