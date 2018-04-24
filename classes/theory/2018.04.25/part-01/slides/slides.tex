@@ -461,12 +461,13 @@
   \end{frame}
 
   \begin{frame}{Construção de um \emph{heap} máximo - Análise refinada}
-    A solução do último somatório pode ser achada derivando ambos os lados
-    da equação da série geométrica \footnotemark[1]:
+    A solução do último somatório pode ser achada derivando e multiplicando
+    por $x$ ambos os lados da série geométrica \footnotemark[1]:
 
     \begin{align*}
       \frac{\partial}{\partial x}\left(\sum_{k = 0}^{\infty} x ^ k\right)
       &= \frac{\partial}{\partial x}\left(\frac{1}{1 - x}\right) \\
+      \sum_{k = 0}^{\infty} kx^{k - 1} &= \frac{1}{(1 - x) ^ 2} \\
       \sum_{k = 0}^{\infty} kx ^ k &= \frac{x}{(1 - x) ^ 2}
     \end{align*}
 
