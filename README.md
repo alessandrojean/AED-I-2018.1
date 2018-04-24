@@ -7,7 +7,7 @@ Algorithms written in the classes of Algorithms and Data Structures I (Algoritmo
 [year]: https://img.shields.io/badge/year-2018.1-blue.svg?style=flat-square
 [id]: https://img.shields.io/badge/id-MCTA001--13-yellowgreen.svg?style=flat-square
 [tpi]: https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg?style=flat-square
-[last-class]: https://img.shields.io/badge/last_class-2018.04.23-green.svg?style=flat-square
+[last-class]: https://img.shields.io/badge/last_class-2018.04.25-green.svg?style=flat-square
 [language]: https://img.shields.io/badge/language-C-yellow.svg?style=flat-square
 [ide]: https://img.shields.io/badge/IDE-VSCode-orange.svg?style=flat-square
 
@@ -32,6 +32,7 @@ programming language].
 - **16/04/2018** *(Laboratory)*: [Basic sorting algorithms]. [Linked list sort practical exercise].
 - **18/04/2018** *(Theory)*: [Mergesort and Quicksort].
 - **23/04/2018** *(Laboratory)*: [Mergesort in Linked List practical exercise].
+- **25/04/2018** *(Theory)*: [Heapsort] and Countingsort.
 
 [Subject introduction]: classes/laboratory/2018.02.19/part-1/
 [Introduction to the C programming language]: classes/laboratory/2018.02.19/part-2/
@@ -53,6 +54,7 @@ programming language].
 [Linked list sort practical exercise]: practical/2018.04.16/
 [Mergesort and Quicksort]: classes/theory/2018.04.18/
 [Mergesort in Linked List practical exercise]: practical/2018.04.23/
+[Heapsort]: classes/theory/2018.04.25/part-01/
 
 ## Build instructions
 
