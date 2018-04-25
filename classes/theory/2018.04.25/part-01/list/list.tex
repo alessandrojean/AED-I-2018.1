@@ -1,0 +1,55 @@
+% !TeX program = xelatex
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[brazil]{babel}
+\let\latinencoding\relax
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage[a4paper, margin=2cm]{geometry}
+
+\title{Lista de exercícios - Heapsort}
+\date{\today}
+
+\begin{document}
+  \begin{center}
+    {\LARGE Algoritmos e Estruturas de Dados I} \\[1em]
+    {\large Lista de Exercícios - Heapsort} \\[1em]
+    {\large\today}
+  \end{center}
+
+  \vspace{1em}
+
+  \begin{enumerate}
+    \item (Cormen 6.2-1) Ilustre passo a passo a operação de
+    \textsc{Max-Heapify}$(v,14,2)$ no vetor  \texttt{v} que tem os
+     elementos \texttt{\{27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0\}}.
+
+    \item Implemente uma versão iterativa da função \textsc{Max-Heapify}.
+
+    \item Implemente a função \textsc{Min-Heapify}, onde dado um
+    \emph{heap} representado por um vetor \texttt{v}, com tamanho
+    \texttt{n}, e um dado nó \texttt{i}, rearranje \texttt{v}
+    de modo que o nó \texttt{i} seja um \emph{heap} mínimo.
+
+    \item (Cormen 6.3-1) Ilustre passo a passo a operação de
+    \textsc{Build-Max-Heap}$(v,9)$ no vetor \texttt{v} que tem os
+    elementos \texttt{\{5, 3, 17, 10, 84, 19, 6, 22, 9\}}.
+
+    \item Implemente a função \textsc{Build-Min-Heap}, que
+    recebe como parâmetros de entrada um vetor \texttt{i} com
+    tamanho \texttt{n}, e constrói um \emph{heap} mínimo.
+
+    \item Ilustre passo a passo a ordenação \textsc{Heapsort},
+    desde a construção do \emph{heap},
+    sobre o vetor \texttt{v} que tem os elementos 
+    \texttt{\{15, 9, 1, 7, 52, 2, -1, -8, 10, 20, 18, 4, 6, 2\}}.
+
+    \item Implemente uma variante do \textsc{Heapsort}, que tem
+    um parâmetro de entrada adicional \texttt{desc}, que caso
+    seja verdadeiro, deve ordenar o vetor \texttt{v} de \texttt{n}
+    elementos em ordem decrescente, caso contrário, deve ordenar em
+    ordem crescente.
+  \end{enumerate}
+\end{document}

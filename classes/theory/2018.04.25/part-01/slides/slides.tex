@@ -284,7 +284,7 @@
       \item Para corrigir os relacionamentos entre \texttt{v[i]}, \texttt{v[left(i)]} e \texttt{v[right(i)]},
       tem-se custo $\Theta(1)$ mais o tempo de execução de \texttt{maxHeapify} em uma das sub-árvores de $i$;
       \item As sub-árvores têm tamanho máximo igual a $\frac{2n}{3}$ \footnotemark[1];
-      \item O caso pior ocorre quando a última linha da árvore está exatamente metade cheia \footnotemark[2].
+      \item O caso pior ocorre quando o último nível da árvore está exatamente metade cheio \footnotemark[2].
     \end{itemize}
 
     Pode-se, então, descrever a recorrência de \texttt{maxHeapify} como: $$T(n) = T\left(\frac{2n}{3}\right) + \Theta(1)$$
