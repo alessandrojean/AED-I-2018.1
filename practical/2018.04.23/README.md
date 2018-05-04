@@ -10,7 +10,7 @@ Escreva um programa em linguagem C que receba uma sequência de operações
 (inserção, ordenação crescente por RA, ordenação decrescente por RA
 e imprimir lista).
 
-Salve o código no arquivo: `mergesorligado.c`. 
+Salve o código no arquivo: `mergesortligado.c`. 
 
 O programa deverá utilizar uma **lista ligada**.
 **Não utilize array/arranjo!**
