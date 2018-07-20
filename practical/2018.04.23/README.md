@@ -1,4 +1,5 @@
 # RAs e Notas (Ordenação)
+*Exercício do Prof. Paulo H. Pisani, CMCC/UFABC.*
 
 O professor ABC guarda os RAs (número de registro do aluno) e nota de cada
 aluno em um sistema. Esse sistema usa uma **lista ligada**. O sistema possui 

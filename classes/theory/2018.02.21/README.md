@@ -1,5 +1,5 @@
-
 # Breve revisão de ponteiros e estruturas dinâmicas
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Introdução
 

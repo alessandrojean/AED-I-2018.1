@@ -1,4 +1,5 @@
 # Lista de Exercícios 7: Árvores AVL
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 1. Escreva uma função que dada uma ABB `A` de inteiros e uma chave `k`, transforme 
 `A` usando rotações do forma tal que `k` seja raiz. Note que se `k` não estiver em

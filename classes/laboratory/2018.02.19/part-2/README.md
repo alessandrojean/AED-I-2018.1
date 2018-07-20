@@ -1,4 +1,5 @@
 # Breve revisão da linguagem C
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Introdução
 

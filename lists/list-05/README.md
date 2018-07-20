@@ -1,4 +1,5 @@
 # Lista de Exercícios 5: Estruturas Lineares
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Variantes auto-ajustáveis
 

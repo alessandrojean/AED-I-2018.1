@@ -1,4 +1,5 @@
 # Apresentação da disciplina
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## O que é um programa?
 

@@ -1,4 +1,5 @@
 # Lista de Exercícios 8: Ordenação
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 1. Adapte o algoritmo de ordenação por inserção de forma tal que
 utilize a busca binária para achar a posição onde o elemento deve

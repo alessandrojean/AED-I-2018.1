@@ -1,4 +1,5 @@
 # Algoritmos de Ordenação Simples
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Introdução
 

@@ -1,4 +1,5 @@
 # Estruturas Lineares: Pilhas e Filas
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Introdução
 

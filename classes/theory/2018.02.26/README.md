@@ -1,4 +1,5 @@
 # Estruturas lineares dinâmicas (listas)
+*Retirado dos slides do Prof. Paulo H. Pisani, CMCC/UFABC.*
 
 ## Introdução
 

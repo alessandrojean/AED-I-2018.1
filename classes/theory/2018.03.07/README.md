@@ -1,4 +1,5 @@
 # Noções básicas de complexidade de algoritmos
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Complexidade de algoritmos recursivos
 

@@ -1,4 +1,5 @@
 # Algoritmos de Ordenação Ótimos
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Introdução
 

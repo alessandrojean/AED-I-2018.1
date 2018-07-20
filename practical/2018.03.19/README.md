@@ -1,4 +1,5 @@
 # Lista de RAs
+*Exercício do Prof. Paulo H. Pisani, CMCC/UFABC.*
 
 O professor ABC guarda os RAs (número de registro do aluno) de todos que tiraram
 nota final A. Sempre que um aluno tira A ao final do quadrimestre, o RA dele é

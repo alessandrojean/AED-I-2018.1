@@ -1,4 +1,5 @@
 # Árvores AVL
+*Retirado dos slides da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Balanceamento nas Árvores AVL - Rotações
 

@@ -1,4 +1,5 @@
 # Lista de Exercícios 6: Árvores Binárias de Busca
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## 1. Remoção por cópia nas ABBs (T. Hibbard e D. Knuth)
 

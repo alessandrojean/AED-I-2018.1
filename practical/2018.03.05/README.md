@@ -1,4 +1,5 @@
 # Lista de dúvidas
+*Exercício do Prof. Paulo H. Pisani, CMCC/UFABC.*
 
 Muitos alunos procuram o professor ABC para tirar dúvidas ao longo do quadrimestre.
 Recentemente, o professor foi alocado para dez turmas, o que implicou em um grande 

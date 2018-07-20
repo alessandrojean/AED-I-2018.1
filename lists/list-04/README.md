@@ -1,4 +1,5 @@
 # Lista de Exercícios 4: Complexidade de algoritmos
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Notações assintóticas
 

@@ -1,4 +1,5 @@
 ## Desafio 1 - Matrizes esparsas
+*Exercício do Prof. Paulo H. Pisani, CMCC/UFABC.*
 
 Uma matriz esparsa é uma matriz que possui poucos elementos diferentes de zero.
 Por exemplo:

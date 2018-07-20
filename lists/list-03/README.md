@@ -1,4 +1,5 @@
 # Lista de Exercícios 3: Listas Ligadas
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Operações sobre listas simplesmente enlaçadas
 

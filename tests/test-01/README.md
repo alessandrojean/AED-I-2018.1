@@ -1,4 +1,5 @@
 # Prova 01
+*Prova da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## 1. Parte Teórica (6 pontos)
 

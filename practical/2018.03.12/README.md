@@ -1,4 +1,5 @@
 # Expressão pós-fixa
+*Exercício do Prof. Paulo H. Pisani, CMCC/UFABC.*
 
 Normalmente, expressões matemáticas são apresentadas utilizando a notação
 *infixa*. Por exemplo:

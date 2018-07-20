@@ -1,4 +1,5 @@
 # Lista de Exercícios 2: Ponteiros e estruturas dinâmicas
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 ## Vetores, Ponteiros e Strings
 

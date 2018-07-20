@@ -1,4 +1,5 @@
 # Lista de Exercícios 1: Revisão da Linguagem C
+*Lista de exercícios da Prof. Mirtha Lina, CMCC/UFABC.*
 
 Escreva programas em C para resolver os seguintes problemas definindo funções apropriadas.
 
